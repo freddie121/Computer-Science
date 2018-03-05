@@ -11,7 +11,7 @@ static Scanner s = new Scanner(System.in);
 static int[] answers = new int[10];
 // To generate a random number (not important for the algorithm but useful to test)
 static Random rand = new Random();
-    //easiest way to populate array in java
+    // Easiest way to populate array in java
     public static void populateArrays(){
             for (int i = 0; i <= 9; i++) {
                 quiz[i][0] = "Q" + Integer.toString(i);
@@ -25,7 +25,7 @@ static Random rand = new Random();
     // Subroutine to run the quiz
     public static void runQuiz(){
         int correctAnswers = 0;
-        //Iterates for each question in the quiz
+        // Iterates for each question in the quiz
         for(int i = 0; i <=9; i++){
             System.out.println("Question number " + i + ": " + quiz[i][0]);
             System.out.println("1. " + quiz[i][1]);
@@ -49,6 +49,7 @@ static Random rand = new Random();
         System.out.println("You got: " + correctAnswers + " answers correct");
     }
 
+    // Main Program
     public static void main(String[] args) {
 	populateArrays();
 	runQuiz();
