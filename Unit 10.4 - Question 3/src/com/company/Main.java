@@ -20,6 +20,9 @@ public class Main {
             else if(a == b){
                 System.out.println("Play A and B");
             }
+            else if(a == c){
+                System.out.println("Play A and C");
+            }
             else{
                 System.out.println("Play B and C");
             }
@@ -28,6 +31,6 @@ public class Main {
 
     public static void main(String[] args) {
         //calls the subroutine
-	    playVote(2,1,1);
+	    playVote(2,1,2);
     }
 }
